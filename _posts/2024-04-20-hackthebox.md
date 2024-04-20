@@ -1,6 +1,6 @@
 ---
 categories: hackthebox
-title: "hackthebox"
+title: "hack"
 ---
 
 test
