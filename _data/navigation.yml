@@ -2,12 +2,6 @@
 main:
   - title: "Category"
     url: /categories/
-
-docs:
-  - title: "platforms"
-    children:
-      - title: "Category"
-      url: /categories/#redraccoon
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
