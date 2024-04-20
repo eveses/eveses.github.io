@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "KOREA"
-title                    : "Write Up Blog"
+title                    : "W.U.B"
 title_separator          : "|"
 subtitle                 : "write up for multiple ctf platforms"
-name                     : "eveses"
+name                     : "wub"
 description              : "write up 정리용 블로그 입니다"
 url                      : "https://eveses.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
