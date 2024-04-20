@@ -104,11 +104,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "eveses"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "j.Lee"
+  avatar           : /assets/IMG_0663.jpg
   bio              : "student"
   location         : "south korea"
-  email            :
+  email            : "evenightday@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
