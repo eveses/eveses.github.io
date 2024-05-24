@@ -285,7 +285,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       toc: true
       toc_sticky: true
       #read_time: true
