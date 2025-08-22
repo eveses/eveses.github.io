@@ -1,0 +1,131 @@
+/* === Base background & text =============================================== */
+html, body {
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(30, 76, 120, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, rgba(0, 100, 180, 0.16), transparent 55%),
+    linear-gradient(180deg, #06090e 0%, #070b10 40%, #060a0f 100%);
+  color: #d7e2ee;
+}
+
+/* 링크 */
+a {
+  color: #2aa9ff;
+  text-decoration: none;
+  transition: color .18s ease, text-shadow .18s ease;
+}
+a:hover { color: #6bd6ff; text-shadow: 0 0 8px rgba(42,169,255,.5); }
+
+/* 선택 영역 */
+::selection { background: rgba(42,169,255,.28); color: #e9f6ff; }
+
+/* === 레이아웃(폭/패딩 커스텀 없음) ======================================== */
+/* 큰 사각형 박스만 제거(배경 투명화). 너비 관련 커스텀은 일체 없음. */
+.page {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+/* 제목 가독성만 살짝 강화(크기/폭 영향 없음) */
+.page__title {
+  background: none !important;
+  -webkit-text-fill-color: initial !important;
+  color: #eaf5ff !important;
+  font-weight: 800;
+  letter-spacing: .2px;
+  text-shadow: 0 0 6px rgba(100,160,220,.15);
+}
+
+/* 상단 네비(색감만 유지, 너비 미조정) */
+.masthead {
+  backdrop-filter: saturate(110%) blur(8px);
+  background: rgba(4, 8, 12, 0.75) !important;
+  border-bottom: 1px solid rgba(42,169,255,.20);
+  box-shadow: 0 6px 18px rgba(0,0,0,.35);
+}
+.greedy-nav { background: transparent !important; }
+
+/* 표(기본 톤만) */
+.table-wrapper, table { background: rgba(255,255,255,.02); border-color: rgba(110,170,220,.22); }
+
+/* === “제목+날짜” 목록: 플랫 라인 ======================================== */
+.post-list--kali { list-style: none; padding-left: 0; margin: 1rem 0 0; }
+.post-list--kali > li {
+  margin: 0; padding: .55rem 0 .6rem;
+  border-bottom: 1px dashed rgba(110,170,220,.25);
+}
+.post-list--kali > li:last-child { border-bottom: none; }
+.post-list--kali a { font-weight: 650; color: #bfe5ff; }
+.post-list--kali a:hover { color: #e9f6ff; text-shadow: 0 0 6px rgba(42,169,255,.4); }
+.post-list--kali small { display: block; color: #89a8c5; margin-top: .12rem; }
+
+/* 페이지네이션(간단 톤만) */
+.pagination {
+  display: flex; gap: .75rem; align-items: center;
+  background: transparent; border: 0; padding: .4rem 0; border-radius: 0;
+}
+.pagination a {
+  padding: .3rem .55rem; border-radius: 8px;
+  border: 1px solid rgba(42,169,255,.25);
+  background: rgba(42,169,255,.08);
+}
+.pagination a:hover { border-color: rgba(42,169,255,.45); }
+
+/* 스크롤바(옵션) */
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background: rgba(20,30,45,.5); }
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(42,169,255,.9), rgba(10,40,70,.9));
+  border: 2px solid rgba(5,10,15,1);
+  border-radius: 10px;
+}
+
+/* ===== Filesystem Path (Breadcrumb-like) ================================== */
+/* 크기를 작게 유지(이전 요청 반영). 너비에는 영향 없음. */
+.fs-path {
+  margin: .15rem 0 .7rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: clamp(0.82rem, calc(0.78rem + 0.20vw), 0.98rem);
+  letter-spacing: .2px;
+  display: inline-flex; flex-wrap: wrap; align-items: center;
+}
+.fs-path__link {
+  color: #bfe5ff;
+  border-bottom: 1px dotted rgba(42,169,255,.35);
+  transition: color .15s ease, border-color .15s ease, text-shadow .15s ease;
+  margin-right: .35rem;
+}
+.fs-path__link:hover {
+  color: #e9f6ff;
+  border-bottom-color: rgba(42,169,255,.6);
+  text-shadow: 0 0 6px rgba(42,169,255,.45);
+}
+.fs-path__gap { display: inline-block; width: .1rem; }
+
+/* 제목 대신 경로만 쓰는 페이지(옵션) */
+.fs-title-only .page__title { display: none; }
+.fs-title-only .fs-path {
+  font-weight: 700;
+  font-size: clamp(1.00rem, calc(0.95rem + 0.50vw), 1.30rem);
+}
+
+/* ===== Minimal inline nav on Home (옵션) ================================== */
+.k-inline-nav {
+  margin-top: .4rem;
+  display: flex; gap: 1rem; flex-wrap: wrap;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+.k-inline-nav a {
+  color: #bfe5ff;
+  border-bottom: 1px dotted rgba(42,169,255,.35);
+  transition: color .12s ease, border-color .12s ease, text-shadow .12s ease;
+}
+.k-inline-nav a:hover {
+  color: #e9f6ff;
+  border-bottom-color: rgba(42,169,255,.6);
+  text-shadow: 0 0 6px rgba(42,169,255,.45);
+}
+.fs-path__link { margin-right: 0 !important; }
+.fs-path__sep  { margin: 0 !important; }

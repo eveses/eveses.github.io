@@ -1,0 +1,52 @@
+$background-color: #070b10 !default;          // 전체 배경
+$body-background-color: $background-color !default;
+
+$text-color: #d7e2ee !default;                // 본문 텍스트
+$muted-text-color: #9bb0c7 !default;
+
+$primary-color: #2aa9ff !default;             // 핵심 포인트(링크/버튼)
+$info-color: #6bd6ff !default;
+
+$link-color: $primary-color !default;
+$link-color-hover: lighten($primary-color, 10%) !default;
+
+$border-color: rgba(42, 169, 255, 0.25) !default;
+$border-color-hover: rgba(42, 169, 255, 0.45) !default;
+
+$button-color: $primary-color !default;
+$button-background-color: rgba(42, 169, 255, 0.12) !default;
+$button-border-color: rgba(42, 169, 255, 0.35) !default;
+$button-text-color: #dff3ff !default;
+
+$masthead-background: rgba(4, 8, 12, 0.75) !default;
+$masthead-link-color: #dce9f7 !default;
+$masthead-link-color-hover: $link-color-hover !default;
+
+$footer-background-color: rgba(4, 8, 12, 0.8) !default;
+
+$code-background-color: #0d1117 !default;     // 코드블록
+$code-border-color: #1f6feb !default;
+$code-text-color: #c9d1d9 !default;
+
+$kbd-background: #0f1722 !default;
+$kbd-border: #2b3b53 !default;
+$kbd-text: #d7e2ee !default;
+
+$accent-color: $primary-color !default;
+$focus-color: $primary-color !default;
+
+/* 하이라이트(rouge) 톤 */
+$highlight-background: #0c1016 !default;
+$highlight-foreground: #d7e2ee !default;
+$highlight-comment: #7d8ca1 !default;
+$highlight-blue: #58b6ff !default;
+$highlight-green: #7ee787 !default;
+$highlight-purple: #d2a8ff !default;
+$highlight-red: #ff7b72 !default;
+
+/* 표 */
+$table-background-color: rgba(255, 255, 255, 0.02) !default;
+$table-border-color: $border-color !default;
+
+/* 카드(포스트 박스) 배경 느낌 */
+$card-background: rgba(255,255,255,0.03) !default;

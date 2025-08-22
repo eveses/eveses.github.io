@@ -1,0 +1,10 @@
+/* _sass/_mm-variables.scss */
+
+/* 우측 사이드바(TOC/author) 폭 — 너무 줄이면 줄바꿈 납니다. */
+$right-sidebar-width-narrow: 160px;  /* (기본 200px 근처) */
+$right-sidebar-width:        220px;  /* (기본 300px 근처) */
+$right-sidebar-width-wide:   280px;  /* (기본 400px 근처) */
+
+/* 본문/컨테이너 폭 — 데스크톱 기준 상한을 키움 */
+$content-width: 980px;   /* 글 본문 기본 폭(페이지에 사이드바 없을 때도 영향) */
+$max-width:     1280px;  /* 전체 컨테이너 상한 (헤더/본문 공통) */

@@ -1,0 +1,9 @@
+{% assign items = include.path | default: page.fs_path %}
+{% if items and items.size > 0 %}
+<nav class="fs-path" aria-label="Filesystem path">
+  {% for seg in items %}
+    {% unless forloop.first %}<span class="fs-path__sep">/</span>{% endunless %}
+    <a class="fs-path__link" href="{{ seg.url | relative_url }}">{{ seg.label }}</a>
+  {% endfor %}
+</nav>
+{% endif %}

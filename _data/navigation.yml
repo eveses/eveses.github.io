@@ -1,0 +1,9 @@
+main:
+  - title: "WRITEUP"
+    url: /writeup/
+  - title: "STUDY"
+    url: /study/
+  - title: "CHEATSHEET"
+    url: /cheatsheet/
+  - title: "ABOUT"
+    url: /about/
