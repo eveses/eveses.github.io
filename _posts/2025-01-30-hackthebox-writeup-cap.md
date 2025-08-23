@@ -9,6 +9,7 @@ tags: [htb, linux, easy]
 
 ## Info
 
+- Platform: Hackthebox
 - Machine Name: Cap
 - Target IP/Host: 10.10.10.245
 - OS / Version: Linux
