@@ -1,0 +1,9 @@
+main:
+  - title: "HACKTHEBOX"
+    url: /hackthebox/
+  - title: "TRYHACKME"
+    url: /tryhackme/
+  - title: "CHEATSHEET"
+    url: /cheatsheet/
+  - title: "ABOUT"
+    url: /about/
