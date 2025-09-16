@@ -5,7 +5,7 @@ categories: [hackthebox]
 tags: [htb, linux, easy]
 ---
 
-![head](/assets/images/wrieups/cap/스크린샷%202025-08-23%20오후%206.36.20.png)
+![head](/assets/images/hackthebox/cap/스크린샷%202025-08-23%20오후%206.36.20.png)
 
 ## Info
 
@@ -25,31 +25,31 @@ Let’s start !
 
 First I did basic nmap scanning to find open ports. And I got 3 open ports FTP(21), SSH(22), HTTP(80).
 
-![nmap](/assets/images/wrieups/cap/스크린샷%202025-08-23%20오후%206.40.14.png)
+![nmap](/assets/images/hackthebox/cap/스크린샷%202025-08-23%20오후%206.40.14.png)
 
 Let’s check port 80 first.
 
-![web](/assets/images/wrieups/cap/스크린샷%202025-08-23%20오후%206.40.59.png)
+![web](/assets/images/hackthebox/cap/스크린샷%202025-08-23%20오후%206.40.59.png)
 
 The website shows I’m logged in as ‘Nathan’ but I can’t log out or access any user settings.
 
 I only can access the menu and download packet capture files of my traffic.
 
-![web](/assets/images/wrieups/cap/스크린샷%202025-08-23%20오후%206.41.59.png)
+![web](/assets/images/hackthebox/cap/스크린샷%202025-08-23%20오후%206.41.59.png)
 
 While looking around, I found that the URL index number increases when I refresh the page. Since the index number started at 1, so I decided to check index 0.
 
-![web](/assets/images/wrieups/cap/스크린샷%202025-08-23%20오후%206.42.41.png)
+![web](/assets/images/hackthebox/cap/스크린샷%202025-08-23%20오후%206.42.41.png)
 
 I was able to download the packet capture file from index 0, and I opened this packet file with wireshark.
 
 ## Initial Access
 
-![wireshark](/assets/images/wrieups/cap/스크린샷%202025-08-23%20오후%206.43.48.png)
+![wireshark](/assets/images/hackthebox/cap/스크린샷%202025-08-23%20오후%206.43.48.png)
 
 I found user credential in the packet file and tried them on SSH since users often reuse their credentials. It worked !
 
-![linpeas](/assets/images/wrieups/cap/스크린샷%202025-08-23%20오후%206.44.53.png)
+![linpeas](/assets/images/hackthebox/cap/스크린샷%202025-08-23%20오후%206.44.53.png)
 
 In the user home directory, I found the user flag.
 
@@ -61,15 +61,15 @@ So I executed the linpeas script and noticed that the Python binary file had ‘
 
 Press enter or click to view image in full size
 
-![linpeas](/assets/images/wrieups/cap/스크린샷%202025-08-23%20오후%206.45.47.png)
+![linpeas](/assets/images/hackthebox/cap/스크린샷%202025-08-23%20오후%206.45.47.png)
 
 I looked through GTFOBins, which is collection of Unix binaries that can be used to bypass local security. There I found how to escalate privileges using Python capabilities.
 
-![gtfo](/assets/images/wrieups/cap/스크린샷%202025-08-23%20오후%206.46.28.png)
+![gtfo](/assets/images/hackthebox/cap/스크린샷%202025-08-23%20오후%206.46.28.png)
 
 Finally, I got the root flag !
 
-![flag](/assets/images/wrieups/cap/스크린샷%202025-08-23%20오후%206.47.12.png)
+![flag](/assets/images/hackthebox/cap/스크린샷%202025-08-23%20오후%206.47.12.png)
 
 ## Conclusion
 
