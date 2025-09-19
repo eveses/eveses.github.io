@@ -1,6 +1,6 @@
 ---
 title: "[TryHackMe] walkthrough: Ice (Easy, Windows, metasploit)"
-date: 2025-02-01
+date: 2025-09-19
 categories: [tryhackme]
 tags: [thm, windows, easy, metasploit]
 ---
