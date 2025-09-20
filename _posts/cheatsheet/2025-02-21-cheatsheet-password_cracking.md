@@ -1,8 +1,8 @@
 ---
-title: "Password cracking (johntheripper, hashcat)"
+title: "Password cracking (johntheripper, hashcat ..)"
 date: 2025-02-21
 categories: [cheatsheet]
-tags: [cracking]
+tags: [cracking,password]
 ---
 
 ## Hashcat
