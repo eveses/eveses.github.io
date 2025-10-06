@@ -1,5 +1,5 @@
 ---
-title: "[HackTheBox] walkthrough: Cap (Easy, Linux)"
+title: "[HackTheBox] walkthrough: Cap (Linux)"
 date: 2025-01-30
 categories: [hackthebox]
 tags: [htb, linux, easy]
