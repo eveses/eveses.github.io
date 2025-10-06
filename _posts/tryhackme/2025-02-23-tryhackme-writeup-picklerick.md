@@ -1,5 +1,5 @@
 ---
-title: "[TryHackMe] walkthrough: Pickle Rick (Easy, Linux)"
+title: "[TryHackMe] walkthrough: Pickle Rick (Linux)"
 date: 2025-02-23
 categories: [tryhackme]
 tags: [thm, linux, easy]

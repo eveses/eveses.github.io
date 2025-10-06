@@ -1,5 +1,5 @@
 ---
-title: "[TryHackMe] walkthrough: Mr Robot (Medium, Linux)"
+title: "[TryHackMe] walkthrough: Mr Robot (Linux)"
 date: 2025-02-14
 categories: [tryhackme]
 tags: [thm, linux, medium]
