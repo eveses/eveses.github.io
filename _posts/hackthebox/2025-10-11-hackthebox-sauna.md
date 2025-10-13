@@ -204,5 +204,3 @@ evil-winrm -i 10.10.10.175 -u administrator -H <hash>
 
 ![12](/assets/images/hackthebox/sauna/스크린샷%202025-10-05%20오전%203.03.38.png)
 관리자 Desktop 폴더에서 root.txt를 찾을 수 있다.
-
-{{site.baseurl}}{% post_url }
