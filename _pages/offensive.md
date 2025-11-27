@@ -12,7 +12,18 @@ fs_path:
 
 {% include fs-path.html path=page.fs_path %}
 
-<h3>Offensive Security Archives</h3>
+<div class="sub-navigation" style="margin-bottom: 30px;">
+  <h3>Categories</h3>
+  <ul>
+    <li><a href="/hackthebox/">📁 Hack The Box</a> - HTB Write-ups</li>
+    <li><a href="/tryhackme/">📁 TryHackMe</a> - THM Write-ups</li>
+    <li><a href="/cheatsheet/">📝 Cheatsheet</a> - Pentest Notes</li>
+  </ul>
+</div>
+
+<hr>
+
+<h3>All Offensive Posts</h3>
 <ul class="post-list--kali">
   {% for post in site.posts %}
     {% if post.categories contains 'hackthebox' or post.categories contains 'tryhackme' or post.categories contains 'cheatsheet' %}

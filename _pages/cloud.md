@@ -12,7 +12,18 @@ fs_path:
 
 {% include fs-path.html path=page.fs_path %}
 
-<h3>Cloud & Architecture Archives</h3>
+<div class="sub-navigation" style="margin-bottom: 30px;">
+  <h3>Categories</h3>
+  <ul>
+    <li><a href="/aws-saa/">☁️ AWS SAA</a> - Solutions Architect Associate</li>
+    <li><a href="/aws-security/">🛡️ AWS Security</a> - Security Specialty</li>
+    <li><a href="/cloud-study/">📚 Cloud Study</a> - General Cloud Notes</li>
+  </ul>
+</div>
+
+<hr>
+
+<h3>All Cloud Posts</h3>
 <ul class="post-list--kali">
   {% for post in site.posts %}
     {% if post.categories contains 'aws-saa' or post.categories contains 'aws-security' or post.categories contains 'cloud-study' %}
