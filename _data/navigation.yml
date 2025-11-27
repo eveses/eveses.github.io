@@ -1,5 +1,6 @@
 main:
   - title: "Offensive (Red)"
+    url: /offensive/     
     children:
       - title: "Hack The Box"
         url: /hackthebox/
@@ -9,6 +10,7 @@ main:
         url: /cheatsheet/
 
   - title: "Cloud (Blue)"
+    url: /cloud/          
     children:
       - title: "AWS SAA"
         url: /aws-saa/
