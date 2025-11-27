@@ -12,9 +12,12 @@ fs_path:
 
 {% include fs-path.html path=page.fs_path %}
 
-> Hello — this is a small blog where I document what I’m learning in **Offensive Security** and while preparing for the **OSCP**.
+> Hello. This blog records my preparation for **OSCP** (Offensive Security) and **AWS** (Cloud Architecture) certifications.
 
-You’ll mainly find [Hack The Box]({{ '/hackthebox/' | relative_url }}) and [TryHackMe]({{ '/tryhackme/' | relative_url }}) write-ups, plus a practical [cheatsheet]({{ '/cheatsheet/' | relative_url }}) of commands and configs I actually use. The focus is on **hands-on**, **reproducible** notes over polish.
+Here you will find my study notes and write-ups across two main domains:
+
+* **Offensive (Red):** [Hack The Box]({{ '/hackthebox/' | relative_url }}) and [TryHackMe]({{ '/tryhackme/' | relative_url }}) write-ups, plus a practical [cheatsheet]({{ '/cheatsheet/' | relative_url }}).
+* **Cloud (Blue):** [AWS SAA]({{ '/aws-saa/' | relative_url }}) and [Security Specialty]({{ '/aws-security/' | relative_url }}) study notes.
 
 ---
 

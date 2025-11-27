@@ -8,7 +8,7 @@ classes: fs-title-only
 fs_path:
   - { label: home,       url: / }
   - { label: offensive,  url: /offensive/ }
-  - { label: cheatsheet, url: /cheatsheet/ }   # 라벨을 "cheat"로 줄이고 싶으면 label만 변경
+  - { label: cheatsheet, url: /cheatsheet/ }  
 ---
 
 {% include fs-path.html path=page.fs_path %}
