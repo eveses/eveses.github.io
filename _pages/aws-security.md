@@ -1,20 +1,20 @@
 ---
 layout: single
-title: "[Hackthebox]"
-permalink: /hackthebox/
+title: "[AWS Security]"
+permalink: /aws-security/
 author_profile: true
-classes: fs-title-only  
+classes: fs-title-only
 
 fs_path:
   - { label: home,    url: / }
-  - { label: offensive,  url: /offensive/ }
-  - { label: hackthebox, url: /hackthebox/ }
+  - { label: cloud,        url: /cloud/ }
+  - { label: aws-security, url: /aws-security/ }
 ---
 
 {% include fs-path.html path=page.fs_path %}
 
 <ul class="post-list--kali">
-  {% assign filtered_posts = site.posts | where_exp: "p", "p.categories contains 'hackthebox'" | sort: "date" | reverse %}
+  {% assign filtered_posts = site.posts | where_exp: "p", "p.categories contains 'aws-security'" | sort: "date" | reverse %}
   {% for post in filtered_posts %}
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>

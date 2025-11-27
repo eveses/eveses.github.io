@@ -1,24 +1,25 @@
 ---
 layout: single
-title: "[Tryhackme]"
-permalink: /tryhackme/
+title: "Cloud Security"
+permalink: /cloud/
 author_profile: true
 classes: fs-title-only
 
 fs_path:
   - { label: home,  url: / }
-  - { label: offensive,  url: /offensive/ }
-  - { label: tryhackme, url: /tryhackme/ }
+  - { label: cloud, url: /cloud/ }
 ---
 
 {% include fs-path.html path=page.fs_path %}
 
+<h3>Cloud & Architecture Archives</h3>
 <ul class="post-list--kali">
-  {% assign filtered_posts = site.posts | where_exp: "p", "p.categories contains 'tryhackme'" | sort: "date" | reverse %}
-  {% for post in filtered_posts %}
+  {% for post in site.posts %}
+    {% if post.categories contains 'aws-saa' or post.categories contains 'aws-security' or post.categories contains 'cloud-study' %}
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <small>{{ post.date | date: site.date_format | default: "%Y-%m-%d" }}</small>
     </li>
+    {% endif %}
   {% endfor %}
 </ul>

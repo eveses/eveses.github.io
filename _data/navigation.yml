@@ -1,9 +1,23 @@
 main:
-  - title: "HACKTHEBOX"
-    url: /hackthebox/
-  - title: "TRYHACKME"
-    url: /tryhackme/
-  - title: "CHEATSHEET"
-    url: /cheatsheet/
-  - title: "ABOUT"
+  - title: "Offensive (Red)"
+    children:
+      - title: "Hack The Box"
+        url: /hackthebox/
+      - title: "TryHackMe"
+        url: /tryhackme/
+      - title: "Cheatsheet"
+        url: /cheatsheet/
+
+  - title: "Cloud (Blue)"
+    children:
+      - title: "AWS SAA"
+        url: /aws-saa/
+        
+      - title: "AWS Security"  
+        url: /aws-security/
+        
+      - title: "Cloud Study"  
+        url: /cloud-study/
+
+  - title: "About"
     url: /about/
