@@ -1,5 +1,5 @@
 ---
-title: "Load Balancer 비교 & Route 53
+title: "Load Balancer 비교 & Route 53"
 date: 2025-12-13
 categories: [aws-saa]
 tags: [AWS, ALB, NLB, GLB, DNS, Route53]
