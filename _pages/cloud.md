@@ -26,7 +26,7 @@ fs_path:
 <h3>All Cloud Posts</h3>
 <ul class="post-list--kali">
   {% for post in site.posts %}
-    {% if post.categories contains 'aws-saa' or post.categories contains 'aws-security' or post.categories contains 'cloud-study' %}
+    {% if post.categories contains 'aws-saa' or post.categories contains 'aws-scs' or post.categories contains 'azure-az-500' %}
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <small>{{ post.date | date: site.date_format | default: "%Y-%m-%d" }}</small>
