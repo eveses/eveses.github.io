@@ -12,7 +12,7 @@ fs_path:
 
 {% include fs-path.html path=page.fs_path %}
 
-> Hello. This blog records my preparation for **OSCP** (Offensive Security) and **AWS** (Cloud Architecture) certifications.
+> Hello. This blog records my preparation for **OSCP** (Offensive Security) and **Cloud** (AWS, Azure, GCP) certifications.
 
 Here you will find my study notes and write-ups across two main domains:
 
