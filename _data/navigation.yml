@@ -15,11 +15,11 @@ main:
       - title: "AWS SAA"
         url: /aws-saa/
         
-      - title: "AWS Security"  
-        url: /aws-security/
+      - title: "AWS SCS"  
+        url: /aws-scs/
         
-      - title: "Cloud Study"  
-        url: /cloud-study/
+      - title: "Azure AZ-500"  
+        url: /azure-az-500/
 
   - title: "About"
     url: /about/
