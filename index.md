@@ -17,7 +17,7 @@ fs_path:
 Here you will find my study notes and write-ups across two main domains:
 
 * **Offensive (Red):** [Hack The Box]({{ '/hackthebox/' | relative_url }}) and [TryHackMe]({{ '/tryhackme/' | relative_url }}) write-ups, plus a practical [cheatsheet]({{ '/cheatsheet/' | relative_url }}).
-* **Cloud (Blue):** [AWS SAA]({{ '/aws-saa/' | relative_url }}) and [Security Specialty]({{ '/aws-security/' | relative_url }}) study notes.
+* **Cloud (Blue):** [AWS SAA]({{ '/aws-saa/' | relative_url }}) and [Security SCS]({{ '/aws-scs/' | relative_url }}) and [Azure Certifications]({{ '/azure-az-500/' | relative_url }}) study notes.
 
 ---
 
