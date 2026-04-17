@@ -15,9 +15,9 @@ fs_path:
 <div class="sub-navigation" style="margin-bottom: 30px;">
   <h3>Categories</h3>
   <ul>
-    <li><a href="/aws-saa/">☁️ AWS SAA</a> - Solutions Architect Associate</li>
-    <li><a href="/aws-scs/">🛡️ AWS SCS</a> - Security Specialty</li>
-    <li><a href="/azure-az-500/">📚 Azure AZ-500</a> - Security Engineer Associate</li>
+    <li><a href="/aws-saa/">AWS SAA</a> - Solutions Architect Associate</li>
+    <li><a href="/aws-scs/">AWS SCS</a> - Security Specialty</li>
+    <li><a href="/azure-az-500/">Azure AZ-500</a> - Security Engineer Associate</li>
   </ul>
 </div>
 
