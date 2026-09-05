@@ -3,7 +3,7 @@ layout: single
 title: "Home"
 permalink: /
 author_profile: false
-classes: fs-title-only home-dashboard
+classes: wide fs-title-only home-dashboard
 
 fs_path:
   - { label: home, url: / }
