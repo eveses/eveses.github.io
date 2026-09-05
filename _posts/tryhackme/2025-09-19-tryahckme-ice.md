@@ -3,7 +3,10 @@ title: "[TryHackMe] walkthrough: Ice (Windows, Metasploit)"
 date: 2025-09-19
 categories: [tryhackme]
 tags: [thm, windows, easy, metasploit]
+summary: "취약한 Icecast 서비스와 Metasploit의 post-exploitation 기능을 활용하는 Windows 실습입니다."
 ---
+
+{% include post-intro.html %}
 
 ![title](/assets/images/tryhackme/Ice/스크린샷%202025-09-19%20오후%2010.23.17.png)
 

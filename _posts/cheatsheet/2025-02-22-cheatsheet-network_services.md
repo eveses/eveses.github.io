@@ -3,7 +3,10 @@ title: "Network services password attack (ssh, ftp, smb ..)"
 date: 2025-02-22
 categories: [cheatsheet]
 tags: [password]
+summary: "SSH, FTP, SMB, RDP, WinRM 등 네트워크 서비스별 비밀번호 공격과 인증 명령을 정리합니다."
 ---
+
+{% include post-intro.html %}
 
 > 여러 네트워크 서비스 패스워드 공격 방법.
 

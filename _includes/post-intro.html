@@ -1,0 +1,42 @@
+{% assign category = page.categories | first %}
+{% case category %}
+  {% when 'hackthebox' %}
+    {% assign category_label = 'Hack The Box' %}
+    {% assign note_label = 'Machine write-up' %}
+  {% when 'tryhackme' %}
+    {% assign category_label = 'TryHackMe' %}
+    {% assign note_label = 'Room write-up' %}
+  {% when 'cheatsheet' %}
+    {% assign category_label = 'Cheatsheet' %}
+    {% assign note_label = 'Reference note' %}
+  {% when 'aws-saa' %}
+    {% assign category_label = 'AWS SAA' %}
+    {% assign note_label = 'Architecture note' %}
+  {% when 'aws-scs' %}
+    {% assign category_label = 'AWS Security' %}
+    {% assign note_label = 'Certification note' %}
+  {% when 'azure-az-500' %}
+    {% assign category_label = 'Azure AZ-500' %}
+    {% assign note_label = 'Security note' %}
+  {% else %}
+    {% assign category_label = category | replace: '-', ' ' | upcase %}
+    {% assign note_label = 'Study note' %}
+{% endcase %}
+
+<aside class="post-intro post-intro--{{ category }}" aria-label="Post overview">
+  <div class="post-intro__meta">
+    <span class="post-intro__category">{{ category_label }}</span>
+    <span>{{ note_label }}</span>
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.date_format | default: "%Y-%m-%d" }}</time>
+  </div>
+
+  {% if page.summary %}
+    <p class="post-intro__summary">{{ page.summary }}</p>
+  {% endif %}
+
+  {% if page.tags.size > 0 %}
+    <div class="post-intro__tags" aria-label="Post tags">
+      {% for tag in page.tags %}<span>#{{ tag }}</span>{% endfor %}
+    </div>
+  {% endif %}
+</aside>

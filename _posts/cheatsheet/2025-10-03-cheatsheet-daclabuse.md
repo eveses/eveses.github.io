@@ -3,7 +3,10 @@ title: "How to abuse GenericAll / WriteDacl permission on Active Directory"
 date: 2025-10-03
 categories: [cheatsheet]
 tags: [AD, bloodhound, permission]
+summary: "GenericAll과 WriteDACL 권한을 그룹 제어 및 DCSync까지 연결하는 Active Directory 공격 흐름입니다."
 ---
+
+{% include post-intro.html %}
 
 ![1](/assets/images/cheatsheet/abuse_dacl/스크린샷%202025-10-04%20오후%202.59.57.png)
 

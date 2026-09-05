@@ -1,9 +1,12 @@
 ---
-title: "[HacktTheBox] walkthrough: Forest (Active Directory)"
+title: "[HackTheBox] walkthrough: Forest (Active Directory)"
 date: 2025-10-03
 categories: [hackthebox]
 tags: [htb, Windows, AD]
+summary: "AS-REP Roasting으로 진입한 뒤 BloodHound로 권한 관계를 분석하고 DACL abuse와 DCSync로 확장합니다."
 ---
+
+{% include post-intro.html %}
 
 ![7](/assets/images/hackthebox/forest/스크린샷%202025-10-06%20오후%2011.13.02.png)
 

@@ -1,0 +1,19 @@
+{% assign saa_posts = site.posts | where_exp: "p", "p.categories contains 'aws-saa'" %}
+{% assign scs_posts = site.posts | where_exp: "p", "p.categories contains 'aws-scs'" %}
+{% assign azure_posts = site.posts | where_exp: "p", "p.categories contains 'azure-az-500'" %}
+{% assign cloud_count = saa_posts.size | plus: scs_posts.size | plus: azure_posts.size %}
+
+<nav class="collection-tabs collection-tabs--cloud" aria-label="Cloud note collections">
+  <a class="collection-tab collection-tab--cloud{% if include.active == 'all' %} is-active{% endif %}" href="{{ '/cloud/' | relative_url }}">
+    <span>All notes</span><strong>{{ cloud_count }}</strong>
+  </a>
+  <a class="collection-tab collection-tab--aws{% if include.active == 'aws-saa' %} is-active{% endif %}" href="{{ '/aws-saa/' | relative_url }}">
+    <span>AWS SAA</span><strong>{{ saa_posts.size }}</strong>
+  </a>
+  <a class="collection-tab collection-tab--aws{% if include.active == 'aws-scs' %} is-active{% endif %}" href="{{ '/aws-scs/' | relative_url }}">
+    <span>AWS Security</span><strong>{{ scs_posts.size }}</strong>
+  </a>
+  <a class="collection-tab collection-tab--azure{% if include.active == 'azure-az-500' %} is-active{% endif %}" href="{{ '/azure-az-500/' | relative_url }}">
+    <span>Azure AZ-500</span><strong>{{ azure_posts.size }}</strong>
+  </a>
+</nav>

@@ -3,7 +3,10 @@ title: "Password cracking (johntheripper, hashcat ..)"
 date: 2025-02-21
 categories: [cheatsheet]
 tags: [cracking,password]
+summary: "Hashcat, John the Ripper, CeWL의 자주 쓰는 모드와 명령을 빠르게 찾을 수 있는 참고 노트입니다."
 ---
+
+{% include post-intro.html %}
 
 ## Hashcat
 기본 (워드리스트) -a 0

@@ -13,12 +13,21 @@ fs_path:
 
 {% include fs-path.html path=page.fs_path %}
 
-<ul class="post-list--kali">
-  {% assign filtered_posts = site.posts | where_exp: "p", "p.categories contains 'cheatsheet'" | sort: "date" | reverse %}
+<div class="collection-heading">
+  <p class="collection-heading__eyebrow">QUICK REFERENCE / CHEATSHEETS</p>
+  <p class="collection-heading__description">Compact commands and attack notes built for use during practice.</p>
+</div>
+
+{% include offensive-tabs.html %}
+
+{% assign filtered_posts = site.posts | where_exp: "p", "p.categories contains 'cheatsheet'" | sort: "date" | reverse %}
+<div class="collection-section-heading">
+  <h2>Cheatsheets</h2>
+  <span>{{ filtered_posts.size }} references</span>
+</div>
+
+<div class="post-card-list">
   {% for post in filtered_posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <small>{{ post.date | date: site.date_format | default: "%Y-%m-%d" }}</small>
-    </li>
+    {% include post-card.html post=post %}
   {% endfor %}
-</ul>
+</div>

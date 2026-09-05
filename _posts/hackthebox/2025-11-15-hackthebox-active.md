@@ -1,9 +1,12 @@
 ---
-title: "[HacktTheBox] walkthrough: Active (Active Directory)"
+title: "[HackTheBox] walkthrough: Active (Active Directory)"
 date: 2025-11-15
 categories: [hackthebox]
 tags: [htb, Windows, AD]
+summary: "SMB null session에서 GPP 자격 증명을 발견하고 Kerberoasting을 통해 관리자 권한으로 확장합니다."
 ---
+
+{% include post-intro.html %}
 
 ![](/assets/images/hackthebox/active/스크린샷%202025-10-05%20오전%201.01.44.png)
 

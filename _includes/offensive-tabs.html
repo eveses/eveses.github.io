@@ -1,0 +1,19 @@
+{% assign htb_posts = site.posts | where_exp: "p", "p.categories contains 'hackthebox'" %}
+{% assign thm_posts = site.posts | where_exp: "p", "p.categories contains 'tryhackme'" %}
+{% assign cheatsheet_posts = site.posts | where_exp: "p", "p.categories contains 'cheatsheet'" %}
+{% assign offensive_count = htb_posts.size | plus: thm_posts.size | plus: cheatsheet_posts.size %}
+
+<nav class="collection-tabs" aria-label="Offensive post categories">
+  <a class="collection-tab{% if page.permalink == '/offensive/' %} is-active{% endif %}" href="{{ '/offensive/' | relative_url }}">
+    <span>All notes</span><strong>{{ offensive_count }}</strong>
+  </a>
+  <a class="collection-tab collection-tab--htb{% if page.permalink == '/hackthebox/' %} is-active{% endif %}" href="{{ '/hackthebox/' | relative_url }}">
+    <span>Hack The Box</span><strong>{{ htb_posts.size }}</strong>
+  </a>
+  <a class="collection-tab collection-tab--thm{% if page.permalink == '/tryhackme/' %} is-active{% endif %}" href="{{ '/tryhackme/' | relative_url }}">
+    <span>TryHackMe</span><strong>{{ thm_posts.size }}</strong>
+  </a>
+  <a class="collection-tab collection-tab--cheatsheet{% if page.permalink == '/cheatsheet/' %} is-active{% endif %}" href="{{ '/cheatsheet/' | relative_url }}">
+    <span>Cheatsheets</span><strong>{{ cheatsheet_posts.size }}</strong>
+  </a>
+</nav>

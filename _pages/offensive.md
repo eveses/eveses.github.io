@@ -12,25 +12,28 @@ fs_path:
 
 {% include fs-path.html path=page.fs_path %}
 
-<div class="sub-navigation" style="margin-bottom: 30px;">
-  <h3>Categories</h3>
-  <ul>
-    <li><a href="/hackthebox/">📁 Hack The Box</a> - HTB Write-ups</li>
-    <li><a href="/tryhackme/">📁 TryHackMe</a> - THM Write-ups</li>
-    <li><a href="/cheatsheet/">📝 Cheatsheet</a> - Pentest Notes</li>
-  </ul>
+<div class="collection-heading">
+  <p class="collection-heading__eyebrow">FIELD NOTES / OFFENSIVE SECURITY</p>
+  <p class="collection-heading__description">Walkthroughs and practical references, organized for quick scanning.</p>
 </div>
 
-<hr>
+{% include offensive-tabs.html %}
 
-<h3>All Offensive Posts</h3>
-<ul class="post-list--kali">
+{% assign offensive_count = 0 %}
+{% for post in site.posts %}
+  {% if post.categories contains 'hackthebox' or post.categories contains 'tryhackme' or post.categories contains 'cheatsheet' %}
+    {% assign offensive_count = offensive_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+<div class="collection-section-heading">
+  <h2>All notes</h2>
+  <span>{{ offensive_count }} entries</span>
+</div>
+
+<div class="post-card-list">
   {% for post in site.posts %}
     {% if post.categories contains 'hackthebox' or post.categories contains 'tryhackme' or post.categories contains 'cheatsheet' %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <small>{{ post.date | date: site.date_format | default: "%Y-%m-%d" }}</small>
-    </li>
+      {% include post-card.html post=post %}
     {% endif %}
   {% endfor %}
-</ul>
+</div>

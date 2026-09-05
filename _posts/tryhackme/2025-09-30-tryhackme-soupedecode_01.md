@@ -3,7 +3,10 @@ title: "[TryHackMe] walkthrough: Soupedecode 01 (Active Directory)"
 date: 2025-09-30
 categories: [tryhackme]
 tags: [thm, Windows, AD]
+summary: "Kerberos·SMB 열거, password spraying과 Pass-the-Hash를 연결해 도메인 컨트롤러를 공략합니다."
 ---
+
+{% include post-intro.html %}
 
 ![title](/assets/images/tryhackme/soupedecode_01/스크린샷%202025-09-30%20오후%207.36.35.png)
 

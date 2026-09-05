@@ -3,7 +3,10 @@ title: "[TryHackMe] walkthrough: Mr Robot (Linux)"
 date: 2025-02-14
 categories: [tryhackme]
 tags: [thm, linux, medium]
+summary: "WordPress 사용자·비밀번호 공격으로 reverse shell을 확보하고 SUID 바이너리를 이용해 root로 상승합니다."
 ---
+
+{% include post-intro.html %}
 
 ![head](/assets/images/tryhackme/mr_robot/스크린샷%202025-08-23%20오후%207.29.02.png)
 

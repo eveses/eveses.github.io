@@ -1,0 +1,51 @@
+{% assign item = include.post %}
+{% assign category = item.categories | first %}
+{% assign display_title = item.title | replace: '[HackTheBox] walkthrough: ', '' | replace: '[HacktTheBox] walkthrough: ', '' | replace: '[TryHackMe] walkthrough: ', '' %}
+{% case category %}
+  {% when 'hackthebox' %}
+    {% assign category_label = 'Hack The Box' %}
+    {% assign note_label = 'Machine write-up' %}
+  {% when 'tryhackme' %}
+    {% assign category_label = 'TryHackMe' %}
+    {% assign note_label = 'Room write-up' %}
+  {% when 'cheatsheet' %}
+    {% assign category_label = 'Cheatsheet' %}
+    {% assign note_label = 'Reference note' %}
+  {% when 'aws-saa' %}
+    {% assign category_label = 'AWS SAA' %}
+    {% assign note_label = 'Architecture note' %}
+  {% when 'aws-scs' %}
+    {% assign category_label = 'AWS Security' %}
+    {% assign note_label = 'Certification note' %}
+  {% when 'azure-az-500' %}
+    {% assign category_label = 'Azure AZ-500' %}
+    {% assign note_label = 'Security note' %}
+  {% else %}
+    {% assign category_label = category | replace: '-', ' ' | upcase %}
+    {% assign note_label = 'Study note' %}
+{% endcase %}
+
+<a class="post-card post-card--{{ category }}" href="{{ item.url | relative_url }}">
+  <article>
+    <header class="post-card__meta">
+      <span class="post-card__category">{{ category_label }}</span>
+      <span class="post-card__type">{{ note_label }}</span>
+      <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: site.date_format | default: "%Y-%m-%d" }}</time>
+    </header>
+
+    <h3 class="post-card__title">{{ display_title }}</h3>
+
+    {% if item.summary %}
+      <p class="post-card__summary">{{ item.summary }}</p>
+    {% endif %}
+
+    <footer class="post-card__footer">
+      <span class="post-card__tags" aria-label="Tags">
+        {% for tag in item.tags limit: 4 %}
+          <span>#{{ tag }}</span>
+        {% endfor %}
+      </span>
+      <span class="post-card__open" aria-hidden="true">Open note <span>→</span></span>
+    </footer>
+  </article>
+</a>

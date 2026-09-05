@@ -3,7 +3,10 @@ title: "[HackTheBox] walkthrough: Cap (Linux)"
 date: 2025-01-30
 categories: [hackthebox]
 tags: [htb, linux, easy]
+summary: "PCAP에서 노출된 자격 증명을 찾고 Linux capabilities를 이용해 root 권한을 획득합니다."
 ---
+
+{% include post-intro.html %}
 
 ![head](/assets/images/hackthebox/cap/스크린샷%202025-08-23%20오후%206.36.20.png)
 

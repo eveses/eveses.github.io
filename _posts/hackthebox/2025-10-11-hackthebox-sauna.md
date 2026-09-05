@@ -1,9 +1,12 @@
 ---
-title: "[HacktTheBox] walkthrough: Sauna (Active Directory)"
+title: "[HackTheBox] walkthrough: Sauna (Active Directory)"
 date: 2025-10-11
 categories: [hackthebox]
 tags: [htb, Windows, AD]
+summary: "사용자 열거와 AS-REP Roasting으로 진입하고 내부 자격 증명 수집과 권한 관계 분석을 거쳐 권한을 상승합니다."
 ---
+
+{% include post-intro.html %}
 
 ![8](/assets/images/hackthebox/sauna/스크린샷%202025-10-05%20오전%202.56.15.png)
 

@@ -3,7 +3,10 @@ title: "[TryHackMe] walkthrough: Pickle Rick (Linux)"
 date: 2025-02-23
 categories: [tryhackme]
 tags: [thm, linux, easy]
+summary: "웹 페이지 단서로 인증 정보를 찾고 명령 실행과 reverse shell을 거쳐 root 권한을 확보합니다."
 ---
+
+{% include post-intro.html %}
 
 ![head](/assets/images/tryhackme/pickle_rick/스크린샷%202025-08-23%20오후%207.53.03.png)
 
