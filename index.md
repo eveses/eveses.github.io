@@ -55,12 +55,12 @@ fs_path:
     <p class="home-overview__eyebrow">SECURITY STUDY ARCHIVE</p>
 
     <h1 id="home-title">
-      공격 보안과 클라우드를<br>
-      직접 실습하며 기록합니다.
+      Offensive Security & Cloud<br>
+      Study Note.
     </h1>
 
     <p>
-      실습 과정, 자주 쓰는 명령, 클라우드 아키텍처와 보안 설계 포인트를
+      실습 과정, 자주 쓰는 명령, 퍼블릭 클라우드 기본 개념 및 아키텍처 등을
       다시 찾아보기 쉬운 형태로 정리한 개인 노트입니다.
     </p>
   </div>
